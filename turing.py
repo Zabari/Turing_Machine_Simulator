@@ -20,6 +20,18 @@ def getch():
 # End copy paste
 
 
+# If you would rather not use stackoverflow code, or above function does not
+# work on your system, comment it out and uncomment code below.
+# def getch():
+#     character = (
+#         input("Please input one character. Use return key to submit.\n")
+#     )
+#     while (len(character) > 1):
+#         print("Please input only one character.")
+#         character = input()
+#     return character
+
+
 current_state = None
 state_table = collections.defaultdict(lambda: False)
 tape = ""
